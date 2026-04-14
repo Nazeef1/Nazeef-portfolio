@@ -27,9 +27,13 @@ function resize() {
     height = canvas.height = window.innerHeight;
 }
 
+let oldWidth = window.innerWidth;
 window.addEventListener('resize', () => {
-    resize();
-    initParticles();
+    if (window.innerWidth !== oldWidth) {
+        oldWidth = window.innerWidth;
+        resize();
+        initParticles();
+    }
 });
 
 class Particle {
