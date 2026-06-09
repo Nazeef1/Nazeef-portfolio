@@ -28,6 +28,7 @@
         </a>
         <ul class="nav-links">
             <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
             <li><a href="#skills">Skills</a></li>
             <li><a href="#projects">Projects</a></li>
             <li><a href="#experience">Experience</a></li>
@@ -56,12 +57,27 @@
                 </div>
             </div>
             <!-- Scroll Indicator -->
-            <a href="#skills" id="blast-off-btn" class="scroll-indicator" aria-label="Scroll down to skills">
+            <a href="#about" id="blast-off-btn" class="scroll-indicator" aria-label="Scroll down to about">
                 <div class="rocket">
                     <div class="flame"></div>
                 </div>
                 <p>Blast off</p>
             </a>
+        </section>
+
+        <!-- About Me Section -->
+        <section id="about" class="about section">
+            <h2 class="section-title">About <span>Me</span></h2>
+            <div class="about-container glass-panel">
+                <div class="about-content">
+                    <p>
+                        I am an aspiring Machine Learning Engineer and Data Scientist, dedicated to building intelligent, data-driven systems that solve complex, real-world problems. With a strong foundation in computer science, machine learning, and software engineering, I specialize in developing multimodal ML pipelines, deep learning models for NLP, and mobile applications integrating computer vision and proximity verification.
+                    </p>
+                    <p style="margin-top: 1rem;">
+                        My research experience at B.M.S. College of Engineering focuses on early dementia detection using speech and linguistic feature engineering. I am passionate about clean architecture, model explainability (XAI) using SHAP, and deploying robust applications that merge premium user experiences with high-performance backends.
+                    </p>
+                </div>
+            </div>
         </section>
 
         <!-- Skills Section -->
@@ -77,19 +93,25 @@
                 <div class="skill-card glass-panel" data-tilt>
                     <h3>ML & Data Analysis</h3>
                     <div class="skill-tags">
-                        <span>Scikit-learn</span><span>Pandas</span><span>NumPy</span><span>Matplotlib</span><span>Tableau</span><span>PowerBI</span>
+                        <span>Scikit-learn</span><span>Pandas</span><span>NumPy</span><span>Matplotlib</span><span>NLTK</span><span>Tensorflow</span><span>Keras</span><span>Tableau</span><span>PowerBI</span>
                     </div>
                 </div>
                 <div class="skill-card glass-panel" data-tilt>
                     <h3>Databases</h3>
                     <div class="skill-tags">
-                        <span>MySQL</span><span>Firebase</span><span>MongoDB</span>
+                        <span>MySQL</span><span>Postgres</span><span>MongoDB</span><span>Neo4j</span><span>Redis</span>
+                    </div>
+                </div>
+                <div class="skill-card glass-panel" data-tilt>
+                    <h3>DevOps</h3>
+                    <div class="skill-tags">
+                        <span>Docker</span><span>Ansible</span><span>Jenkins</span><span>GitHub Actions</span>
                     </div>
                 </div>
                 <div class="skill-card glass-panel" data-tilt>
                     <h3>Tools & Platforms</h3>
                     <div class="skill-tags">
-                        <span>VSCode</span><span>Git</span><span>Android Studio</span><span>Jupyter Notebook</span><span>Langflow</span><span>RStudio</span>
+                        <span>VSCode</span><span>Git</span><span>Linux</span><span>AndroidStudio</span><span>Jupyter Notebook</span><span>Langflow</span><span>RStudio</span>
                     </div>
                 </div>
             </div>
@@ -105,11 +127,11 @@
                         <h3>ClassLogger</h3>
                         <p class="project-subtitle">Smart Classroom Attendance App</p>
                         <ul class="project-details">
-                            <li>Developed a Kotlin-based mobile application to automate classroom attendance in real classroom environments.</li>
-                            <li>Implemented face recognition with location and proximity verification to prevent proxy attendance.</li>
+                            <li>Developed a Kotlin-based Mobile Application to automate classroom attendance in real classroom environments.</li>
+                            <li>Implemented Face Recognition, Location Verification, and Proximity Detection to prevent proxy attendance.</li>
                         </ul>
                         <div class="tech-stack">
-                            <span>Kotlin</span><span>Android Studio</span><span>FaceNet API</span><span>Firebase</span>
+                            <span>Kotlin</span><span>Android Studio</span><span>FaceNet API</span><span>Firebase</span><span>WiFi-based Location Verification</span>
                         </div>
                         <div class="project-links">
                             <a href="https://github.com/Nazeef1/ClassLogger" target="_blank" class="github-link">View on GitHub</a>
@@ -122,11 +144,11 @@
                         <h3>AI Text Detection Web App</h3>
                         <p class="project-subtitle">Classify AI vs Human Text</p>
                         <ul class="project-details">
-                            <li>Built a web application to classify AI-generated versus human-written text with high prediction reliability.</li>
-                            <li>Achieved a ROC-AUC score of 0.96 with real-time explainability for model decisions.</li>
+                            <li>Built a web application to classify AI-generated versus Human-written Text with high prediction reliability.</li>
+                            <li>Achieved a ROC-AUC Score of 0.96 with real-time Model Explainability.</li>
                         </ul>
                         <div class="tech-stack">
-                            <span>Python</span><span>Streamlit</span><span>Gradient Boosting</span><span>TF-IDF</span><span>SHAP</span>
+                            <span>Python</span><span>Streamlit</span><span>Gradient Boosting</span><span>TF-IDF</span><span>POS Tagging</span><span>SHAP</span>
                         </div>
                         <div class="project-links">
                             <a href="https://github.com/Nazeef1/AI_text_detector" target="_blank" class="github-link">View on GitHub</a>
@@ -139,11 +161,11 @@
                         <h3>Fake News Detector</h3>
                         <p class="project-subtitle">Deep Learning Contextual Classification</p>
                         <ul class="project-details">
-                            <li>Built a deep learning model to classify news articles using contextual text understanding.</li>
-                            <li>Integrated explainability to interpret model predictions and linguistic patterns.</li>
+                            <li>Built a Deep Learning model using BiLSTM to classify news articles through contextual text understanding.</li>
+                            <li>Integrated Explainable AI (XAI) techniques to interpret model predictions and linguistic patterns.</li>
                         </ul>
                         <div class="tech-stack">
-                            <span>Python</span><span>BiLSTM</span><span>TensorFlow/Keras</span><span>NLP</span><span>SHAP</span>
+                            <span>Python</span><span>BiLSTM</span><span>TensorFlow/Keras</span><span>SHAP</span><span>NLP Preprocessing</span>
                         </div>
                         <div class="project-links">
                             <a href="https://github.com/Nazeef1/FakeNewsLSTM" target="_blank" class="github-link">View on GitHub</a>
@@ -156,11 +178,11 @@
                         <h3>Credit Card Approval Predictor</h3>
                         <p class="project-subtitle">Structured Financial Data ML System</p>
                         <ul class="project-details">
-                            <li>Designed a machine learning system to predict credit card approvals using structured financial data.</li>
-                            <li>Achieved more than 85% test accuracy through feature engineering and model evaluation.</li>
+                            <li>Designed a Machine Learning Classification System to predict credit card approvals using financial data.</li>
+                            <li>Achieved 85% Test Accuracy through feature engineering, model tuning, and evaluation.</li>
                         </ul>
                         <div class="tech-stack">
-                            <span>Python</span><span>scikit-learn</span><span>Logistic Regression</span><span>Decision Trees</span><span>Pandas</span>
+                            <span>Python</span><span>Scikit-learn</span><span>Logistic Regression</span><span>Decision Trees</span><span>Pandas</span><span>NumPy</span><span>Cross-Validation</span>
                         </div>
                     </div>
                 </div>
@@ -174,14 +196,18 @@
                 <div class="timeline-item glass-panel">
                     <div class="timeline-dot"></div>
                     <div class="timeline-content">
-                        <h3>Ongoing Research</h3>
-                        <h4>Early Detection of Dementia Using Machine Learning</h4>
+                        <h3>B.M.S. College of Engineering</h3>
+                        <div class="timeline-meta">
+                            <span class="role">Machine Learning Research Intern</span>
+                            <span class="location">Bengaluru, India</span>
+                            <span class="date">Oct 2025 &ndash; Mar 2026</span>
+                        </div>
                         <ul class="experience-details">
-                            <li>Developed a multimodal ML pipeline combining linguistic and acoustic features for early dementia detection.</li>
-                            <li>Achieved 99% classification accuracy using feature selection and tuned classifiers.</li>
+                            <li>Developed a Multimodal Machine Learning Pipeline combining Linguistic Features and Acoustic Features for early dementia detection.</li>
+                            <li>Achieved 89% ROC-AUC using Feature Selection, Hyperparameter Tuning, and ensemble classifiers.</li>
                         </ul>
                         <div class="tech-stack">
-                            <span>Python</span><span>Pitt Corpus</span><span>Random Forest</span><span>SVM</span><span>RFE</span><span>SHAP</span>
+                            <span>Python</span><span>Pitt Corpus (DementiaBank)</span><span>Random Forest</span><span>SVM</span><span>RFE</span><span>SHAP</span><span>Speech & Text Feature Engineering</span>
                         </div>
                     </div>
                 </div>

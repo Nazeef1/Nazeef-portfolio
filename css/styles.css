@@ -399,15 +399,33 @@ h2.section-title span {
     60% { transform: translateY(-5px); }
 }
 
+/* About Section */
+.about-container {
+    max-width: 800px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.about-content p {
+    font-size: 1.1rem;
+    color: var(--text-secondary);
+    line-height: 1.8;
+}
 
 /* Skills Grid */
 .skills-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     gap: 2rem;
     width: 100%;
     max-width: 1200px;
     margin: 0 auto;
+}
+
+.skill-card {
+    flex: 1 1 280px;
+    max-width: 380px;
 }
 
 .skill-card h3 {
@@ -550,10 +568,29 @@ h2.section-title span {
     font-size: 1.3rem;
 }
 
-.timeline-content h4 {
+.timeline-meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin: 0.5rem 0 1rem 0;
+    font-size: 0.95rem;
+    align-items: center;
+}
+
+.timeline-meta .role {
     color: var(--text-primary);
-    margin-bottom: 1rem;
-    font-weight: 400;
+    font-weight: 600;
+}
+
+.timeline-meta .location {
+    color: var(--text-secondary);
+}
+
+.timeline-meta .date {
+    color: var(--accent-purple);
+    font-family: 'Orbitron', sans-serif;
+    font-size: 0.9rem;
+    text-shadow: var(--glow-purple);
 }
 
 .experience-details {
@@ -779,7 +816,7 @@ footer {
         left: -1.8rem;
     }
 
-    .projects-grid, .skills-grid {
+    .projects-grid {
         grid-template-columns: 1fr;
     }
 

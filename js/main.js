@@ -126,7 +126,7 @@ document.addEventListener('DOMContentLoaded', () => {
             e.preventDefault();
             blastBtn.classList.add('launching');
             setTimeout(() => {
-                document.querySelector('#skills').scrollIntoView({ behavior: 'smooth' });
+                document.querySelector('#about').scrollIntoView({ behavior: 'smooth' });
             }, 500); 
             
             setTimeout(() => {
