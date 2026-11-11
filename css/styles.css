@@ -412,6 +412,48 @@ h2.section-title span {
     line-height: 1.8;
 }
 
+.education-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 1.2rem;
+    margin-top: 1.8rem;
+    border-top: 1px solid var(--glass-border);
+    padding-top: 1.5rem;
+}
+
+.education-card {
+    background: rgba(255, 255, 255, 0.02);
+    border: 1px solid var(--glass-border);
+    border-radius: 12px;
+    padding: 1.2rem;
+    transition: var(--transition);
+}
+
+.education-card:hover {
+    border-color: rgba(0, 243, 255, 0.3);
+    background: rgba(255, 255, 255, 0.04);
+}
+
+.education-card h4 {
+    font-family: 'Orbitron', sans-serif;
+    color: var(--accent-cyan);
+    font-size: 1rem;
+    margin: 0.3rem 0;
+}
+
+.education-card p {
+    font-size: 0.9rem !important;
+    color: var(--text-secondary);
+    margin: 0;
+}
+
+.edu-year {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 0.8rem;
+    color: var(--accent-purple);
+    text-shadow: var(--glow-purple);
+}
+
 /* Skills Grid */
 .skills-grid {
     display: flex;
@@ -523,6 +565,13 @@ h2.section-title span {
     border-radius: 4px;
 }
 
+.project-links {
+    display: flex;
+    gap: 1.2rem;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
 .project-links a {
     color: var(--text-primary);
     text-decoration: none;
@@ -535,6 +584,21 @@ h2.section-title span {
 
 .project-links a:hover {
     color: var(--accent-cyan);
+}
+
+.project-links .live-link {
+    color: var(--accent-cyan);
+    border: 1px solid rgba(0, 243, 255, 0.4);
+    padding: 4px 12px;
+    border-radius: 20px;
+    background: rgba(0, 243, 255, 0.05);
+    transition: var(--transition);
+}
+
+.project-links .live-link:hover {
+    background: var(--accent-cyan);
+    color: #000;
+    box-shadow: var(--glow-cyan);
 }
 
 /* Experience / Timeline */
@@ -655,6 +719,32 @@ h2.section-title span {
 .extra-card p {
     color: var(--text-secondary);
     margin-bottom: 0.5rem;
+}
+
+.extra-card ul {
+    list-style-type: none;
+    margin-top: 1.2rem;
+    border-top: 1px solid var(--glass-border);
+    padding-top: 1rem;
+}
+
+.extra-card ul li {
+    font-size: 0.95rem;
+    color: var(--text-secondary);
+    margin-bottom: 0.8rem;
+    position: relative;
+    padding-left: 1.2rem;
+}
+
+.extra-card ul li:last-child {
+    margin-bottom: 0;
+}
+
+.extra-card ul li::before {
+    content: '\25B9';
+    position: absolute;
+    left: 0;
+    color: var(--accent-cyan);
 }
 
 /* Contact Section */
